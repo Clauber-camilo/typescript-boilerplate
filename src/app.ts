@@ -1,5 +1,7 @@
 import Fastify, { FastifyInstance } from 'fastify'
+
 import { CONFIG } from '@config/env'
+
 import { initializer } from './routes'
 
 const server: FastifyInstance = Fastify({})
