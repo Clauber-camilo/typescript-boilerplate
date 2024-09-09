@@ -7,7 +7,6 @@
     "pretest": "pnpm lint:fix && prettier --write ./src ./resource",
     "start": "nodemon",
     "lint": "eslint 'src/**/*.{js,ts,tsx}'",
-    "lint:fix": "pnpm run lint -- --fix",
     "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
