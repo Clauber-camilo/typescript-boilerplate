@@ -2,12 +2,10 @@
   "name": "typescript-boilerplate",
   "version": "1.0.0",
   "scripts": {
-    "build": "rm -rf dist/ && tsc -P tsconfig.json && tsc-alias -p tsconfig.default.json && cp newrelic.js dist/",
+    "build": "rm -rf dist/ && tsc -P tsconfig.json && tsc-alias -p tsconfig.default.json",
     "postversion": "bash ./scripts.sh sonar",
-    "pretest": "pnpm lint:fix && prettier --write ./src ./resource",
     "start": "nodemon",
     "lint": "eslint 'src/**/*.{js,ts,tsx}'",
-    "lint:fix": "pnpm run lint -- --fix",
     "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
