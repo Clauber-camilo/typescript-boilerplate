@@ -4,7 +4,6 @@
   "scripts": {
     "build": "rm -rf dist/ && tsc -P tsconfig.json && tsc-alias -p tsconfig.default.json",
     "postversion": "bash ./scripts.sh sonar",
-    "pretest": "pnpm lint:fix && prettier --write ./src ./resource",
     "start": "nodemon",
     "lint": "eslint 'src/**/*.{js,ts,tsx}'",
     "test": "jest --coverage",
