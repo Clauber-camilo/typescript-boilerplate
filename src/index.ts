@@ -1,5 +1,7 @@
 import 'dotenv/config'
+// import { CONFIG } from '@config/env'
 
-import { CONFIG } from '@config/env'
+import { start } from './app'
 
-console.log('CONFIG :: ', CONFIG)
+start();
+

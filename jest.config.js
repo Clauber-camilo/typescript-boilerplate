@@ -19,7 +19,7 @@ module.exports = {
       }
     ]
   },
-  setupFiles: ['./test/setup.ts'],
+  setupFiles: ['./__test__/setup.ts'],
   coveragePathIgnorePatterns: ['<rootDir>/node_modules/', '.mock.js$'],
   modulePaths: [compilerOptions.baseUrl],
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>' })
