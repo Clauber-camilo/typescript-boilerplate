@@ -33,6 +33,8 @@ jspm_packages/
 .env*.local
 .env.test
 
+## build output
+dist/
 
 ### vscode ###
 .vscode/*
