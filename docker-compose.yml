@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    environment:
+      - NODE_ENV=production
+    # env_file:
+    #   - .env
+    # Uncomment for live development
+    volumes:
+      - .:/app
+    # No ports exposed since it's a CLI/script
+    # command: ["pnpm", "run", "start:dev"] # For development
+    command: ['node', 'dist/src/index.js'] # For production (default in Dockerfile)
